@@ -10,7 +10,7 @@ Place you trace reports that you have SCP'd from the cluster where you will pull
 Rename "PROCESS" found on this line to the process you wish to investigate (i.e.: if you open the trace reports, there should be individual process names like "MINIMAP_2_BAM":
 `ldfProcess <- lapply(ldf, subset, grepl("PROCESS", process))`
 
-From here, you can run the rest of the script, with it returning duration (total runtime + waittime), realtime (total runtime), %CPU (percentage CPU used), VMEM (total memory used), RCHAR (read characters), WCHAR (written characters) for the process specified - it will print the results. 
+From here, you can run the rest of the script, with it returning duration (total runtime + waittime), realtime (total runtime), %CPU (percentage CPU used), VMEM (total memory used), RCHAR (read characters), WCHAR (written characters) for the process specified - it will print the results as you work through the script. 
 
 You will have to create and feed these results into your own table.
 
