@@ -1,10 +1,10 @@
 # Trace_Report_Parser
 Parses large number of trace reports from Nextflow to provide meaningful output.
-Need to add your own processes before using this script.
+Need to add your own process(es) before using this script.
 Returns averages and nothing more, but provides vectors for each process pulled out (more could theoretically be added if those are of interest).
 
 ## How to use (for Trace_Parser.R) 
-Place you trace reports that you have SCP'd from the cluster where you will pull them from (i.e.: mine are located in `/Users/edwardrichards/Documents/All_trace/` as can be seen here):
+Place your trace reports that you have SCP'd from the cluster where you will pull them from into your RStudio (i.e.: mine are located in `/Users/edwardrichards/Documents/All_trace/` as can be seen here):
 `filenames_dirs <- list.dirs("/Users/edwardrichards/Documents/All_trace/",full.names=TRUE)`
 
 Rename "PROCESS" found on this line to the process you wish to investigate (i.e.: if you open the trace reports, there should be individual process names like "MINIMAP_2_BAM":
